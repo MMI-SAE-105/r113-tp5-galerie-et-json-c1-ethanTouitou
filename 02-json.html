@@ -13,6 +13,12 @@
 
     <ul x-data="{async données() {const resp=await fetch('02.json');return await resp.json();},
     }">
+        <template x-for="obj in données">
+            <li>
+                <span x-text="obj.nom">Nom</span>
+                <a :href="obj.url" x-text="obj.projet">Projet</a>
+            </li>
+        </template>
 
     </ul>
 
