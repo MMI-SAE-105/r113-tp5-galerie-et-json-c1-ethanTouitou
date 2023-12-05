@@ -90,7 +90,7 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta eveniet enim. Accusamus fugiat veniam
         commodi quis a perferendis, eos quibusdam non quod molestiae reiciendis eius explicabo adipisci assumenda
         nesciunt.</p>
-    <div class="overlay" x-show="imageChien" @click="imageChien = null">
+    <div class="overlay" x-show="imageChien" @click="imageChien = null" @keyup.escape.window=" @keyup.escape.window ">
         <figure><img :src=" imageChien" alt="image 237... un chiot">
         </figure>
     </div>
