@@ -11,24 +11,9 @@
 <body>
     <h1>JSON</h1>
 
-    <ul x-data='{
-        données: [
-            {
-                "nom": "Jean",
-                "projet": "Alpine.js",
-                "url": "https: //alpinejs.dev/"
-            },
-            {
-                "nom": "Maxime",
-                "projet": "Tailwind CSS",
-                "url": "https: //tailwindcss.com/"
-            },
-            {
-                "nom": "Adam",
-                "projet": "Laravel",
-                "url": "https: //laravel.com/"
-            }
-        ]
-}'>
+    <ul x-data="{async données() {const resp=await fetch('02.json');return await resp.json();},
+    }">
+
+    </ul>
 
 </html>
