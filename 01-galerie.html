@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .overlay {
             position: fixed;
@@ -81,14 +82,16 @@
     </style>
 </head>
 
-<body>
+<body x-data="{
+    imageChien: 'https://picsum.photos/id/237/200/300',
+}">
 
     <h1>Galerie</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta eveniet enim. Accusamus fugiat veniam
         commodi quis a perferendis, eos quibusdam non quod molestiae reiciendis eius explicabo adipisci assumenda
         nesciunt./p>
     <div class="overlay">
-        <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
+        <figure><img :src="imageChien" alt="image 237... un chiot"></figure>
 
     </div>
 </body>
