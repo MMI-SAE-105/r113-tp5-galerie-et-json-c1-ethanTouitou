@@ -2,16 +2,16 @@
     {
         "nom": "Jean",
         "projet": "Alpine.js",
-        "url": "https: //alpinejs.dev/"
+        "url": "https://alpinejs.dev/"
     },
     {
         "nom": "Maxime",
         "projet": "Tailwind CSS",
-        "url": "https: //tailwindcss.com/"
+        "url": "https://tailwindcss.com/"
     },
     {
         "nom": "Adam",
         "projet": "Laravel",
-        "url": "https: //laravel.com/"
+        "url": "https://laravel.com/"
     }
 ]
